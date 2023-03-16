@@ -21,7 +21,9 @@ const PORT = process.env.PORT || 5000;
 connectDB();
 
 app.use(express.json());
-app.use(Cors());
+app.use(Cors({
+    origin: 'https://tranquil-mermaid-82b2a1.netlify.app'
+}));
 
 
 
